@@ -4,7 +4,7 @@ import Snapbox from "@/components/Snapbox";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-slate-900">
       <Navbar />
       <CarouselParent>
         <Snapbox />
