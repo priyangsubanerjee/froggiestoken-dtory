@@ -12,7 +12,7 @@ function Snapbox({ children, id, setState, state }) {
   return (
     <div
       id={id}
-      className="lg:h-fit h-full min-h-full w-full shrink-0 snap-start snap-mandatory snap-always px-6 lg:flex lg:flex-col lg:justify-center lg:px-20 relative text-white "
+      className="lg:h-fit h-full min-h-full w-full shrink-0 snap-start snap-mandatory snap-always px-6 lg:flex lg:flex-col lg:justify-center lg:px-20 pb-28 lg:pb-0 relative text-white "
     >
       {children}
       <div ref={ref} className="absolute left-1/2 top-1/2"></div>

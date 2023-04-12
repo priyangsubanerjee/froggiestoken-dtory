@@ -16,3 +16,23 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.progressScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.progressScroll::-webkit-scrollbar-track {
+  appearance: none;
+  background: #030d4d;
+  border-radius: 50px;
+}
+
+.progressScroll::-webkit-scrollbar-thumb {
+  appearance: none;
+  background: #e6e7ec;
+  border-radius: 50px;
+}

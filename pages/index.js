@@ -3,6 +3,7 @@ import CarouselParent from "@/components/CarouselParent";
 import Navbar from "@/components/Navbar";
 import Snapbox from "@/components/Snapbox";
 import About from "@/components/fragments/About";
+import Progress from "@/components/fragments/Progress";
 import Team from "@/components/fragments/Team";
 import { useState } from "react";
 
@@ -18,7 +19,9 @@ export default function Home() {
         <Snapbox id={2} state={state} setState={setState}>
           <Team />
         </Snapbox>
-        <Snapbox id={3} state={state} setState={setState} />
+        <Snapbox id={3} state={state} setState={setState}>
+          <Progress />
+        </Snapbox>
       </CarouselParent>
       <img
         src="/assets/frog_landing_avatar.png"

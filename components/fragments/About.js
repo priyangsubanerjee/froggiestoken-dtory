@@ -9,11 +9,11 @@ function About() {
   };
 
   return (
-    <div>
+    <div className="pt-20 lg:pt-0">
       <p className="text-[#cccccc] text-sm font-poppins font-medium lg:block hidden">
         ABOUT US
       </p>
-      <h1 className="text-4xl lg:text-7xl text-white font-bold leading-[1.2] lg:leading-[1.2] mt-5">
+      <h1 className="text-4xl lg:text-7xl text-white font-extrabold leading-[1.2] lg:leading-[1.2] mt-5">
         FROM FROGGIES <br /> TO SPACE
       </h1>
       <div className="text-primaryGray_100 font-poppins leading-8 text-sm mt-7 lg:w-[650px] w-full">
