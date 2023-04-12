@@ -30,7 +30,7 @@ function Navbar({ theme = "dark" }) {
     <div
       className={`${
         scrollDirection == "down" ? "lg:-translate-y-20" : "translate-y-0"
-      } fixed top-0 inset-x-0 z-20 h-16 lg:h-20 w-full flex items-center px-6 lg:px-20 backdrop-blur transition-all duration-500 ease-in-out`}
+      } fixed top-0 inset-x-0 z-30 h-16 lg:h-20 w-full flex items-center px-6 lg:px-20 backdrop-blur transition-all duration-500 ease-in-out`}
     >
       <div>
         <img
