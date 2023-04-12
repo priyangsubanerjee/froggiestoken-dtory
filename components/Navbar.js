@@ -77,7 +77,7 @@ function Navbar({ theme = "dark" }) {
       >
         <li
           className={`${
-            theme == "dark" ? "bg-linkdark hover:bg-white/10" : "bg-linklight"
+            theme == "dark" ? "bg-linkdark" : "bg-linklight"
           } rounded px-5 py-2 h-9 flex items-center justify-center cursor-pointer transition-all`}
         >
           <Link href={"https://www.everlost.io/"} target="_blank">
@@ -95,7 +95,7 @@ function Navbar({ theme = "dark" }) {
         <Link href={"/interstellar"}>
           <li
             className={`${
-              theme == "dark" ? "bg-linkdark hover:bg-white/10" : "bg-linklight"
+              theme == "dark" ? "bg-linkdark" : "bg-linklight"
             } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer transition-all`}
           >
             <span>Interstellar</span>
