@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function Interstellar() {
   const [state, setState] = useState(0);
@@ -41,7 +42,9 @@ function Interstellar() {
                 once: true,
               }}
             >
-              <span>FUELING SUCCESS</span>
+              <Link href={"/interstellar/fuelingSuccess"}>
+                <span>FUELING SUCCESS</span>
+              </Link>
             </motion.li>
             <motion.li
               onMouseEnter={() => {
@@ -62,7 +65,9 @@ function Interstellar() {
               }}
               viewport={{ once: true }}
             >
-              <span>ORBITING P2E</span>
+              <Link href={"/interstellar/orbitingP2e"}>
+                <span>ORBITING P2E</span>
+              </Link>
             </motion.li>
             <motion.li
               onMouseEnter={() => {
@@ -83,7 +88,9 @@ function Interstellar() {
               }}
               viewport={{ once: true }}
             >
-              <span>STELLAR INNOVATION</span>
+              <Link href={"/interstellar/stellarInnovation"}>
+                <span>STELLAR INNOVATION</span>
+              </Link>
             </motion.li>
             <motion.li
               className="hover:text-white transition-all duration-300 ease-in-out"
@@ -104,7 +111,9 @@ function Interstellar() {
               }}
               viewport={{ once: true }}
             >
-              <span>EXPANDING HORIZONS</span>
+              <Link href={"/interstellar/expandingHorizons"}>
+                <span>EXPANDING HORIZONS</span>
+              </Link>
             </motion.li>
             <motion.li
               className="hover:text-white transition-all duration-300 ease-in-out"
@@ -125,7 +134,9 @@ function Interstellar() {
               }}
               viewport={{ once: true }}
             >
-              <span>GALACTIC CONTRIBUTIONS</span>
+              <Link href={"/interstellar/galacticContribution"}>
+                <span>GALACTIC CONTRIBUTIONS</span>
+              </Link>
             </motion.li>
           </ul>
         </div>
