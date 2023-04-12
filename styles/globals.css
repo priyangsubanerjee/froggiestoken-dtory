@@ -36,3 +36,8 @@ html {
   background: #e6e7ec;
   border-radius: 50px;
 }
+
+.font-outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
