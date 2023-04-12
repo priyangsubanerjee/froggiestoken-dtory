@@ -38,15 +38,17 @@ function Navbar({ theme = "dark" }) {
       } fixed top-0 inset-x-0 z-30 h-16 lg:h-20 w-full flex items-center px-6 lg:px-20 backdrop-blur transition-all duration-500 ease-in-out`}
     >
       <div>
-        <img
-          src={
-            theme == "dark"
-              ? "/assets/logo_white.png"
-              : "/assets/logo_black.png"
-          }
-          className="h-7 lg:h-8"
-          alt=""
-        />
+        <Link href={"/"}>
+          <img
+            src={
+              theme == "dark"
+                ? "/assets/logo_white.png"
+                : "/assets/logo_black.png"
+            }
+            className="h-7 lg:h-8"
+            alt=""
+          />
+        </Link>
       </div>
       <div className="ml-auto block lg:hidden">
         <button

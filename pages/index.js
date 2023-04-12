@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Snapbox from "@/components/Snapbox";
 import About from "@/components/fragments/About";
 import BlackHole from "@/components/fragments/BlackHole";
+import Buy from "@/components/fragments/Buy";
 import Progress from "@/components/fragments/Progress";
 import Team from "@/components/fragments/Team";
 import { useState } from "react";
@@ -24,6 +25,9 @@ export default function Home() {
           <Progress />
         </Snapbox>
         <Snapbox id={4} state={state} setState={setState}>
+          <Buy />
+        </Snapbox>
+        <Snapbox id={5} state={state} setState={setState}>
           <BlackHole />
         </Snapbox>
       </CarouselParent>
