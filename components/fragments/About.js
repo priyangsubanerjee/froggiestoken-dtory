@@ -10,7 +10,7 @@ function About() {
 
   return (
     <div>
-      <p className="text-primaryGray_100 text-sm font-poppins font-medium lg:block hidden">
+      <p className="text-[#cccccc] text-sm font-poppins font-medium lg:block hidden">
         ABOUT US
       </p>
       <h1 className="text-4xl lg:text-7xl text-white font-bold leading-[1.2] lg:leading-[1.2] mt-5">

@@ -3,17 +3,22 @@ import CarouselParent from "@/components/CarouselParent";
 import Navbar from "@/components/Navbar";
 import Snapbox from "@/components/Snapbox";
 import About from "@/components/fragments/About";
+import Team from "@/components/fragments/Team";
+import { useState } from "react";
 
 export default function Home() {
+  const [state, setState] = useState(1);
   return (
     <div className="bg-[#010417] w-screen fixed inset-0 h-screen z-0">
       <Navbar />
-      <CarouselParent>
-        <Snapbox id={1}>
+      <CarouselParent state={state} setState={setState}>
+        <Snapbox id={1} state={state} setState={setState}>
           <About />
         </Snapbox>
-        <Snapbox id={2} />
-        <Snapbox />
+        <Snapbox id={2} state={state} setState={setState}>
+          <Team />
+        </Snapbox>
+        <Snapbox id={3} state={state} setState={setState} />
       </CarouselParent>
       <img
         src="/assets/frog_landing_avatar.png"
