@@ -60,7 +60,7 @@ function Navbar({ theme = "dark" }) {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-7 h-7 text-white"
+            class={`w-7 h-7 ${theme == "dark" ? "text-white" : "text-black"}`}
           >
             <path
               stroke-linecap="round"
