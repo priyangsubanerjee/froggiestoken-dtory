@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from "react";
 import Sidenav from "./Sidenav";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { Popover } from "@headlessui/react";
+import { Icon } from "@iconify/react";
 
 function Navbar({ theme = "dark" }) {
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
@@ -67,25 +70,155 @@ function Navbar({ theme = "dark" }) {
           </svg>
         </button>
       </div>
-      <ul className="hidden lg:flex ml-auto space-x-6 text-sm">
+      <ul
+        className={`ml-auto hidden lg:flex items-center font-poppins text-sm space-x-2 ${
+          theme == "dark" ? "text-white/90" : "text-black"
+        }`}
+      >
         <li
           className={`${
-            theme == "dark"
-              ? "bg-[#000728]  text-white"
-              : "bg-[#e8ecff]  text-black"
-          } h-9 flex items-center px-5 rounded`}
+            theme == "dark" ? "bg-linkdark hover:bg-white/10" : "bg-linklight"
+          } rounded px-5 py-2 h-9 flex items-center justify-center cursor-pointer transition-all`}
         >
-          <span>Everlost</span>
+          <Link href={"https://www.everlost.io/"} target="_blank">
+            <img
+              src={
+                theme == "dark"
+                  ? "/assets/everlost_logo.png"
+                  : "/assets/everlost_black_logo.png"
+              }
+              alt=""
+              className="h-3"
+            />
+          </Link>
+        </li>
+        <Link href={"/interstellar"}>
+          <li
+            className={`${
+              theme == "dark" ? "bg-linkdark hover:bg-white/10" : "bg-linklight"
+            } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer transition-all`}
+          >
+            <span>Interstellar</span>
+          </li>
+        </Link>
+        <Link href={"/manifesto"}>
+          <li
+            className={`${
+              theme == "dark" ? "bg-linkdark" : "bg-linklight"
+            } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
+          >
+            <span>Manifesto</span>
+          </li>
+        </Link>
+
+        <Popover className="relative">
+          <Popover.Button className="outline-none">
+            <li
+              className={`${
+                theme == "dark" ? "bg-linkdark" : "bg-linklight"
+              } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
+            >
+              <span>Buy</span>
+              <Icon
+                height={"24"}
+                width={"24"}
+                icon="material-symbols:arrow-drop-down-rounded"
+              />
+            </li>
+          </Popover.Button>
+
+          <Popover.Panel className="absolute p-4 w-36 left-1/2 -translate-x-1/2 flex flex-col items-center bg-slate-900 mt-3 text-sm text-white/80 rounded">
+            <ul className="space-y-3 text-white font-medium">
+              <li>
+                <Link
+                  target="_blank"
+                  href={
+                    "https://pancakeswap.finance/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f67&inputCurrency=BNB"
+                  }
+                >
+                  Pancakeswap
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href={
+                    "https://poocoin.app/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f7"
+                  }
+                >
+                  Poocoin
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href={"https://www.coinstore.com/#/spot/FRGSTUSDT"}
+                >
+                  Coinstore
+                </Link>
+              </li>
+            </ul>
+          </Popover.Panel>
+        </Popover>
+        <li
+          className={`${
+            theme == "dark" ? "bg-linkdark" : "bg-linklight"
+          } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
+        >
+          <span>Whitepaper</span>
         </li>
         <li
           className={`${
-            theme == "dark"
-              ? "bg-[#000728]  text-white"
-              : "bg-[#e8ecff]  text-black"
-          } h-9 flex items-center px-5 rounded`}
+            theme == "dark" ? "bg-linkdark" : "bg-linklight"
+          } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
         >
-          <span>Interstellar</span>
+          <Icon icon="file-icons:telegram" width={"18"} height={"18"} />
         </li>
+        <li
+          className={`${
+            theme == "dark" ? "bg-linkdark" : "bg-linklight"
+          } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
+        >
+          <Icon icon="mdi:twitter" width={"18"} height={"18"} />
+        </li>
+        <Popover className="relative">
+          <Popover.Button className="outline-none">
+            <li
+              className={`${
+                theme == "dark" ? "bg-linkdark" : "bg-linklight"
+              } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
+            >
+              <span>More</span>
+              <Icon
+                height={"24"}
+                width={"24"}
+                icon="material-symbols:arrow-drop-down-rounded"
+              />
+            </li>
+          </Popover.Button>
+
+          <Popover.Panel className="absolute w-36 left-1/2 -translate-x-1/2 flex flex-col space-y-4 items-center bg-slate-900 p-5 mt-3 text-sm text-white/80 rounded">
+            <ul className="space-y-3 text-white font-medium">
+              <li>
+                <Link href={"/partners"}>Partners</Link>
+              </li>
+              <li>
+                <Link href={"/sitemap"}>Sitemap</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href={"/astronomics"}>Astronomics</Link>
+              </li>
+              <li>
+                <Link href={"/faq"}>FAQ</Link>
+              </li>
+              <li>QYC</li>
+              <li>BSCScan</li>
+              <li>CoinGecko</li>
+              <li>CMC</li>
+            </ul>
+          </Popover.Panel>
+        </Popover>
       </ul>
       <AnimatePresence>
         {sideNavOpen && (
