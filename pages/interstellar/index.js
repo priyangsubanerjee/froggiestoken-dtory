@@ -8,7 +8,7 @@ function Interstellar() {
     <div className="fixed inset-0 h-screen w-screen bg-[#010417]">
       <div className="h-full w-full relative">
         <div className="absolute z-10 h-full w-full flex justify-center items-center">
-          <ul className="text-white/50 space-y-16">
+          <ul className="text-white/50 space-y-16 text-2xl lg:text-5xl font-poppins font-extrabold text-center ">
             <motion.li
               onMouseEnter={() => {
                 setState(1);
@@ -16,7 +16,7 @@ function Interstellar() {
               onMouseLeave={() => {
                 setState(0);
               }}
-              className="text-5xl font-poppins font-extrabold text-center hover:text-white transition-all duration-300 ease-in-out"
+              className="hover:text-white transition-all duration-300 ease-in-out"
               initial={{
                 transform: "translateY(-100px)",
                 opacity: 0,
@@ -37,7 +37,7 @@ function Interstellar() {
               onMouseLeave={() => {
                 setState(0);
               }}
-              className="text-5xl font-poppins font-extrabold text-center hover:text-white transition-all duration-300 ease-in-out"
+              className="hover:text-white transition-all duration-300 ease-in-out"
               initial={{
                 transform: "translateY(-100px)",
                 opacity: 0,
@@ -58,7 +58,7 @@ function Interstellar() {
               onMouseLeave={() => {
                 setState(0);
               }}
-              className="text-5xl font-poppins font-extrabold text-center hover:text-white transition-all duration-300 ease-in-out"
+              className="hover:text-white transition-all duration-300 ease-in-out"
               initial={{
                 transform: "translateY(-100px)",
                 opacity: 0,
@@ -73,7 +73,7 @@ function Interstellar() {
               <span>STELLAR INNOVATION</span>
             </motion.li>
             <motion.li
-              className="text-5xl font-poppins font-extrabold text-center hover:text-white transition-all duration-300 ease-in-out"
+              className="hover:text-white transition-all duration-300 ease-in-out"
               onMouseEnter={() => {
                 setState(4);
               }}
@@ -94,7 +94,7 @@ function Interstellar() {
               <span>EXPANDING HORIZONS</span>
             </motion.li>
             <motion.li
-              className="text-5xl font-poppins font-extrabold text-center hover:text-white transition-all duration-300 ease-in-out"
+              className="hover:text-white transition-all duration-300 ease-in-out"
               onMouseEnter={() => {
                 setState(5);
               }}
