@@ -8,7 +8,7 @@ function Controlbars({ totalBars, state }) {
   const menu = ["About us", "Team", "Progress", "Black Hole"];
   return (
     <div>
-      <div className="fixed left-0 inset-y-0 w-16 hidden lg:flex lg:flex-col justify-center items-center  space-y-7">
+      <div className="fixed bottom-0 z-20 left-0 inset-y-0 w-16 hidden lg:flex lg:flex-col justify-center items-center space-y-7">
         {[...Array(totalBars)].map((_, index) => {
           return (
             <div key={index} className="w-full flex justify-center">
