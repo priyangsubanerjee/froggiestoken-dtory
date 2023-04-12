@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
+import Sidenav from "./Sidenav";
+import { AnimatePresence, motion } from "framer-motion";
 
 function Navbar({ theme = "dark" }) {
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
@@ -44,7 +46,11 @@ function Navbar({ theme = "dark" }) {
         />
       </div>
       <div className="ml-auto block lg:hidden">
-        <button>
+        <button
+          onClick={() => {
+            setSideNavOpen(true);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -81,6 +87,32 @@ function Navbar({ theme = "dark" }) {
           <span>Interstellar</span>
         </li>
       </ul>
+      <AnimatePresence>
+        {sideNavOpen && (
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              transition: {
+                ease: "easeOut",
+              },
+            }}
+            exit={{
+              opacity: 0,
+              transition: {
+                ease: "easeIn",
+              },
+            }}
+          >
+            <Sidenav
+              setSideNavOpen={setSideNavOpen}
+              sideNavOpen={sideNavOpen}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

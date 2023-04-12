@@ -9,7 +9,7 @@ function Progress() {
     firstSection.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 px-6 lg:px-24">
+    <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 pb-28 lg:pb-0 lg:pt-0 px-6 lg:px-24">
       <p className="text-primaryGray_100 text-sm font-poppins font-medium lg:block hidden">
         PROGRESS
       </p>
@@ -18,7 +18,7 @@ function Progress() {
       </h1>
       <div className="lg:mt-10 w-full lg:w-[500px] relative">
         <div className="w-full absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#010417] to-transparent"></div>
-        <div className="space-y-6 h-fit lg:h-[400px] pt-10 pb-28 lg:py-10 overflow-auto progressScroll">
+        <div className="space-y-6 lg:h-[400px] pt-1 lg:py-10 overflow-auto progressScroll">
           <ProgressItem
             type={"completed"}
             text={"P2E Beta testing"}

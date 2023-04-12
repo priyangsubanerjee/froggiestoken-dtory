@@ -9,7 +9,7 @@ function About() {
   };
 
   return (
-    <div className="pt-20 lg:pt-0 px-6 lg:px-24">
+    <div className="pt-20 lg:pt-0 px-6 lg:px-24 pb-28 lg:pb-0 z-0">
       <p className="text-[#cccccc] text-sm font-poppins font-medium lg:block hidden">
         ABOUT US
       </p>

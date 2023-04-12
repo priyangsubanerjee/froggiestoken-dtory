@@ -4,11 +4,11 @@ import React from "react";
 
 function BlackHole() {
   return (
-    <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 px-6 lg:px-24">
+    <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-28 lg:pb-0 px-6 lg:px-24">
       <p className="text-primaryGray_100 text-sm font-poppins font-medium lg:block hidden">
-        BLACK
+        BLACK HOLE
       </p>
-      <h1 className="text-4xl lg:text-7xl text-white font-bold leading-[1.3] lg:leading-[1.3] mt-5">
+      <h1 className="text-4xl lg:text-7xl text-white font-extrabold leading-[1.3] lg:leading-[1.3] mt-5">
         INTO THE BLACK HOLE
       </h1>
       <div className="hidden lg:block text-primaryGray_100 font-poppins leading-8 text-sm mt-5 lg:w-[800px] w-full">
