@@ -3,6 +3,7 @@ import CarouselParent from "@/components/CarouselParent";
 import Navbar from "@/components/Navbar";
 import Snapbox from "@/components/Snapbox";
 import About from "@/components/fragments/About";
+import BlackHole from "@/components/fragments/BlackHole";
 import Progress from "@/components/fragments/Progress";
 import Team from "@/components/fragments/Team";
 import { useState } from "react";
@@ -21,6 +22,9 @@ export default function Home() {
         </Snapbox>
         <Snapbox id={3} state={state} setState={setState}>
           <Progress />
+        </Snapbox>
+        <Snapbox id={4} state={state} setState={setState}>
+          <BlackHole />
         </Snapbox>
       </CarouselParent>
       <img
