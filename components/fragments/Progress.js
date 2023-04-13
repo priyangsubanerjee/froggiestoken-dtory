@@ -16,7 +16,7 @@ function Progress() {
       <h1 className="text-3xl lg:text-6xl text-white font-extrabold leading-[1.6] lg:leading-[1.3] mt-5">
         TEAM IS CONSTANTLY <br /> BUILDING, WHATS NEXT?
       </h1>
-      <div className="lg:mt-10 w-full lg:w-[500px] relative">
+      <div className="mt-6 lg:mt-10 w-full lg:w-[500px] relative">
         <div className="w-full hidden lg:block absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#010417] to-transparent"></div>
         <div className="space-y-6 lg:h-[400px] pt-1 lg:py-10 overflow-auto progressScroll">
           <ProgressItem
