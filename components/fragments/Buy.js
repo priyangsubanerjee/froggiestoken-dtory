@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 import React from "react";
 
 function Buy() {
@@ -20,131 +21,160 @@ function Buy() {
           <div>
             <h1 className="text-lg font-bold">BUY ON DEX</h1>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
-              <div className="h-32 min-w-[128px px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
-                <img
-                  src="/assets/pancake_swap.png"
-                  className="h-12 w-12 grayscale"
-                  alt=""
-                />
-                <div className="flex items-center text-sm">
-                  <span>Pancake Swap</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-3 h-3 ml-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
+              <Link
+                target="_blank"
+                href={
+                  "https://pancakeswap.finance/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f67&inputCurrency=BNB"
+                }
+              >
+                <div className="h-32 min-w-[128px px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
+                  <img
+                    src="/assets/pancake_swap.png"
+                    className="h-12 w-12 grayscale"
+                    alt=""
+                  />
+                  <div className="flex items-center text-sm">
+                    <span>Pancake Swap</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-3 h-3 ml-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
-                <img
-                  src="/assets/poocoin.png"
-                  className="h-12 w-12 grayscale"
-                  alt=""
-                />
-                <div className="flex items-center text-sm">
-                  <span>Poocoin</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-3 h-3 ml-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
+              </Link>
+              <Link
+                target="_blank"
+                href={
+                  "https://poocoin.app/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f7"
+                }
+              >
+                <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
+                  <img
+                    src="/assets/poocoin.png"
+                    className="h-12 w-12 grayscale"
+                    alt=""
+                  />
+                  <div className="flex items-center text-sm">
+                    <span>Poocoin</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-3 h-3 ml-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="mt-6">
             <h1 className="text-lg font-bold">BUY ON CEX</h1>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
-                <img
-                  src="/assets/coinstore.png"
-                  className="h-12 w-12 grayscale"
-                  alt=""
-                />
-                <div className="flex items-center text-sm">
-                  <span>Coinstore</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-3 h-3 ml-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
+              <Link
+                href={"https://www.coinstore.com/#/spot/FRGSTUSDT"}
+                target="_blank"
+              >
+                <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
+                  <img
+                    src="/assets/coinstore.png"
+                    className="h-12 w-12 grayscale"
+                    alt=""
+                  />
+                  <div className="flex items-center text-sm">
+                    <span>Coinstore</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-3 h-3 ml-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
-                <img
-                  src="/assets/p2b.png"
-                  className="h-12 w-12 grayscale"
-                  alt=""
-                />
-                <div className="flex items-center text-sm">
-                  <span>P2B</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-3 h-3 ml-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
+              </Link>
+              <Link
+                target="_blank"
+                href={"https://p2pb2b.com/trade/FRGST_USDT/"}
+              >
+                <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
+                  <img
+                    src="/assets/p2b.png"
+                    className="h-12 w-12 grayscale"
+                    alt=""
+                  />
+                  <div className="flex items-center text-sm">
+                    <span>P2B</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-3 h-3 ml-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
-                <img
-                  src="/assets/coinsbit.png"
-                  className="h-12 w-12 grayscale"
-                  alt=""
-                />
-                <div className="flex items-center text-sm">
-                  <span>Coinsbit</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-3 h-3 ml-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
+              </Link>
+              <Link
+                target="_blank"
+                href={"https://coinsbit.io/trade_classic/FRGST_mUSDT"}
+              >
+                <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
+                  <img
+                    src="/assets/coinsbit.png"
+                    className="h-12 w-12 grayscale"
+                    alt=""
+                  />
+                  <div className="flex items-center text-sm">
+                    <span>Coinsbit</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-3 h-3 ml-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
