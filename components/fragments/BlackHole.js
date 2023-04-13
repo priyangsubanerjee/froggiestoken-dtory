@@ -9,7 +9,7 @@ function BlackHole() {
     firstSection.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="min-h-screen w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-28 lg:pb-0 px-6 lg:px-24">
+    <div className="h-full lg:min-h-screen w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-28 lg:pb-0 px-6 lg:px-24">
       <p className="text-primaryGray_100 text-sm font-poppins font-medium lg:block hidden">
         BLACK HOLE
       </p>
