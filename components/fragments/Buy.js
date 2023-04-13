@@ -20,7 +20,7 @@ function Buy() {
           <div>
             <h1 className="text-lg font-bold">BUY ON DEX</h1>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
-              <div className="h-32 px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg">
+              <div className="h-32 min-w-[128px px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
                 <img
                   src="/assets/pancake_swap.png"
                   className="h-12 w-12 grayscale"
@@ -44,7 +44,7 @@ function Buy() {
                   </svg>
                 </div>
               </div>
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg">
+              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
                 <img
                   src="/assets/poocoin.png"
                   className="h-12 w-12 grayscale"
@@ -73,7 +73,7 @@ function Buy() {
           <div className="mt-6">
             <h1 className="text-lg font-bold">BUY ON CEX</h1>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg">
+              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
                 <img
                   src="/assets/coinstore.png"
                   className="h-12 w-12 grayscale"
@@ -97,7 +97,7 @@ function Buy() {
                   </svg>
                 </div>
               </div>
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg">
+              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
                 <img
                   src="/assets/p2b.png"
                   className="h-12 w-12 grayscale"
@@ -121,7 +121,7 @@ function Buy() {
                   </svg>
                 </div>
               </div>
-              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg">
+              <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg hover:scale-105 transition-all">
                 <img
                   src="/assets/coinsbit.png"
                   className="h-12 w-12 grayscale"
