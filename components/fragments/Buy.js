@@ -6,12 +6,12 @@ function Buy() {
   return (
     <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 pb-28 lg:pb-0 lg:pt-0 px-6 lg:px-24">
       <div className="mt-6 lg:mt-10 w-full lg:flex lg:items-center">
-        <div className="h-[700px] w-full lg:w-[450px] bg-slate-50 rounded-md overflow-hidden">
+        <div className="h-[700px] w-full lg:w-[450px] rounded-md overflow-hidden">
           <iframe
             width={"100%"}
             height="700"
             frameborder="0"
-            className="overflow-hidden"
+            className="overflow-hidden rounded-4xl"
             allow="clipboard-read ; clipboard-write; web-share ; accelerometer; autoplay ; camera; gyroscope ; payment; geolocation *"
             src="https://flooz.trade/embed/trade?swapDisabled=false&swapToTokenAddress=0x7029994f28fd39ff934A96b25591D250A2183f67&swapLockToToken=true&onRampDisabled=false&onRampAsDefault=true&onRampDefaultAmount=200&network=bsc&lightMode=false&primaryColor=%235e38f4&roundedCorners=28&padding=20"
           ></iframe>
