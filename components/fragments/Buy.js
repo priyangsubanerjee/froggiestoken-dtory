@@ -19,7 +19,7 @@ function Buy() {
         <div className="lg:ml-16 mt-16 lg:mt-0">
           <div>
             <h1 className="text-lg font-bold">BUY ON DEX</h1>
-            <div className="flex items-center space-x-5 mt-5">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
               <div className="h-32 px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg">
                 <img
                   src="/assets/pancake_swap.png"
@@ -72,7 +72,7 @@ function Buy() {
           </div>
           <div className="mt-6">
             <h1 className="text-lg font-bold">BUY ON CEX</h1>
-            <div className="flex items-center space-x-5 mt-5">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
               <div className="h-32 min-w-[128px] px-3 bg-[#121728] flex flex-col items-center justify-evenly rounded-lg">
                 <img
                   src="/assets/coinstore.png"
