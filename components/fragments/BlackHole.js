@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 import React from "react";
 
 function BlackHole() {
+  const scrollOnClick = (id) => {
+    const firstSection = document.getElementById(`${id}`);
+    firstSection.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-28 lg:pb-0 px-6 lg:px-24">
       <p className="text-primaryGray_100 text-sm font-poppins font-medium lg:block hidden">
@@ -38,7 +43,12 @@ function BlackHole() {
             <div className="h-full flex items-end">
               <img src="/assets/buy_token_grid.png" className="w-20" alt="" />
             </div>
-            <div className="ml-4">
+            <div
+              className="ml-4 cursor-pointer"
+              onClick={() => {
+                scrollOnClick("4");
+              }}
+            >
               <p className="font-bold text-white">BUY</p>
               <span className="text-[#cccccc] text-sm">
                 Buy froggies token now
@@ -60,10 +70,12 @@ function BlackHole() {
                 alt=""
               />
             </div>
-            <div className="ml-4">
-              <p className="font-bold text-white">INTERSTELLAR</p>
-              <span className="text-[#cccccc] text-sm">Learn more</span>
-            </div>
+            <Link href={"/interstellar"}>
+              <div className="ml-4">
+                <p className="font-bold text-white">INTERSTELLAR</p>
+                <span className="text-[#cccccc] text-sm">Learn more</span>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="h-20 relative -mt-2 lg:-mt-1">
@@ -76,10 +88,14 @@ function BlackHole() {
             <div className="h-full flex items-end">
               <img src="/assets/manifesto_grid.png" className="w-20" alt="" />
             </div>
-            <div className="ml-4">
-              <p className="font-bold text-white">MANIFESTO</p>
-              <span className="text-[#cccccc] text-sm">Short cosmic trip</span>
-            </div>
+            <Link href={"/manifesto"}>
+              <div className="ml-4">
+                <p className="font-bold text-white">MANIFESTO</p>
+                <span className="text-[#cccccc] text-sm">
+                  Short cosmic trip
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="h-20 relative -mt-1 lg:-mt-1 lg:-ml-1">
@@ -92,10 +108,14 @@ function BlackHole() {
             <div className="h-full flex items-end">
               <img src="/assets/astronomics_grid.png" className="w-20" alt="" />
             </div>
-            <div className="ml-4">
-              <p className="font-bold text-white">ASTRONOMICS</p>
-              <span className="text-[#cccccc] text-sm">Outerspace finance</span>
-            </div>
+            <Link href={"/astronomics"}>
+              <div className="ml-4">
+                <p className="font-bold text-white">ASTRONOMICS</p>
+                <span className="text-[#cccccc] text-sm">
+                  Outerspace finance
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

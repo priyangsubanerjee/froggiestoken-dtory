@@ -208,16 +208,46 @@ function Navbar({ theme = "dark" }) {
                 <Link href={"/sitemap"}>Sitemap</Link>
               </li>
               <li>
-                {" "}
                 <Link href={"/astronomics"}>Astronomics</Link>
               </li>
               <li>
                 <Link href={"/faq"}>FAQ</Link>
               </li>
-              <li>QYC</li>
-              <li>BSCScan</li>
-              <li>CoinGecko</li>
-              <li>CMC</li>
+              <li>
+                <Link
+                  target="_blank"
+                  href={"https://nanuqe.com/froggies-token/"}
+                >
+                  QYC
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href={
+                    "https://bscscan.com/token/0x7029994f28fd39ff934a96b25591d250a2183f67"
+                  }
+                >
+                  BSCScan
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href={"https://www.coingecko.com/en/coins/froggies-token"}
+                >
+                  CoinGecko
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  target="_blank"
+                  href={"https://coinmarketcap.com/currencies/froggies/"}
+                >
+                  CMC
+                </Link>
+              </li>
             </ul>
           </Popover.Panel>
         </Popover>
