@@ -80,7 +80,7 @@ function Navbar({ theme = "dark" }) {
         <li
           className={`${
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
-          } rounded px-5 py-2 h-9 flex items-center justify-center cursor-pointer transition-all`}
+          } rounded px-5 py-2 h-9 flex items-center justify-center cursor-pointer transition-all cursor-pointer`}
         >
           <Link href={"https://www.everlost.io/"} target="_blank">
             <img
@@ -167,21 +167,32 @@ function Navbar({ theme = "dark" }) {
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
           } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
         >
-          <span>Whitepaper</span>
+          <Link
+            target="_blank"
+            href={
+              "https://drive.google.com/file/d/1oGf6O1Gq6YJOdazJBeHxGK_3wO3OZSTM/view"
+            }
+          >
+            <span>Whitepaper</span>
+          </Link>
         </li>
         <li
           className={`${
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
           } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
         >
-          <Icon icon="file-icons:telegram" width={"18"} height={"18"} />
+          <Link target="_blank" href={"https://t.me/officialfroggiestoken"}>
+            <Icon icon="file-icons:telegram" width={"18"} height={"18"} />
+          </Link>
         </li>
         <li
           className={`${
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
           } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
         >
-          <Icon icon="mdi:twitter" width={"18"} height={"18"} />
+          <Link target="_blank" href={"https://twitter.com/froggiestoken/"}>
+            <Icon icon="mdi:twitter" width={"18"} height={"18"} />
+          </Link>
         </li>
         <Popover className="relative">
           <Popover.Button className="outline-none">

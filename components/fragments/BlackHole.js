@@ -9,7 +9,7 @@ function BlackHole() {
     firstSection.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-28 lg:pb-0 px-6 lg:px-24">
+    <div className="min-h-screen w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-28 lg:pb-0 px-6 lg:px-24">
       <p className="text-primaryGray_100 text-sm font-poppins font-medium lg:block hidden">
         BLACK HOLE
       </p>
@@ -122,6 +122,20 @@ function BlackHole() {
       <div className="hidden lg:flex items-center text-white mt-10">
         <span className="font-bold">TO THE MOON &amp; NEVER BACK.</span>
         <div className="w-[100px] h-[1px] bg-white mt-[10px] ml-2"></div>
+      </div>
+      <div className="hidden lg:block">
+        <img
+          src="/assets/frgst_right.png"
+          className="absolute right-0 top-7 w-[500px]"
+          alt=""
+        />
+      </div>
+      <div className="hidden lg:block">
+        <img
+          src="/assets/frgst_left.png"
+          className="absolute left-0 bottom-4 w-[500px]"
+          alt=""
+        />
       </div>
     </div>
   );
