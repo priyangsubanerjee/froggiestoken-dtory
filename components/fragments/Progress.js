@@ -17,7 +17,7 @@ function Progress() {
         TEAM IS CONSTANTLY <br /> BUILDING, WHATS NEXT?
       </h1>
       <div className="lg:mt-10 w-full lg:w-[500px] relative">
-        <div className="w-full absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#010417] to-transparent"></div>
+        <div className="w-full hidden lg:block absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#010417] to-transparent"></div>
         <div className="space-y-6 lg:h-[400px] pt-1 lg:py-10 overflow-auto progressScroll">
           <ProgressItem
             type={"completed"}
