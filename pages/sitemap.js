@@ -1,4 +1,6 @@
 import Navbar from "@/components/Navbar";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
 import React from "react";
 
 function Sitemap() {
@@ -15,12 +17,31 @@ function Sitemap() {
         <div>
           <h2 className="text-xl font-extrabold">ABOUT</h2>
           <ul className="font-poppins mt-6 space-y-3">
-            <li>Stellar Doc</li>
-            <li>Manifesto</li>
-            <li>Everlost</li>
-            <li>Team</li>
-            <li>FAQ</li>
-            <li>Partners</li>
+            <li>
+              <Link
+                href="https://drive.google.com/file/d/1oGf6O1Gq6YJOdazJBeHxGK_3wO3OZSTM/view?usp=sharing"
+                target="_blank"
+              >
+                Whitepaper
+              </Link>
+            </li>
+            <li>
+              <Link href="/manifesto">Manifesto</Link>
+            </li>
+            <li>
+              <Link href="https://www.everlost.io/" target="_blank">
+                Everlost
+              </Link>
+            </li>
+            <li>
+              <Link href="/#2">Team</Link>
+            </li>
+            <li>
+              <Link href="/faq">FAQ</Link>
+            </li>
+            <li>
+              <Link href="/partners">Partners</Link>
+            </li>
             <li>Ambassador Program</li>
             <li>Liquidity Lock</li>
             <li>KYC</li>
@@ -30,19 +51,50 @@ function Sitemap() {
         <div>
           <h2 className="text-xl font-extrabold">Interstellar</h2>
           <ul className="font-poppins mt-6 space-y-3">
-            <li>Fueling Success</li>
-            <li>Orbiting P2E</li>
-            <li>Stellar Innovation</li>
-            <li>Expanding Horizons</li>
-            <li>Galactic Contributions</li>
+            <li>
+              <Link href="interstellar/fuelingSuccess">Fueling Success</Link>
+            </li>
+            <li>
+              <Link href="interstellar/orbitingP2e">Orbiting P2E</Link>
+            </li>
+            <li>
+              <Link href="interstellar/stellarInnovation">
+                Stellar Innovation
+              </Link>
+            </li>
+            <li>
+              <Link href="interstellar/expandingHorizons">
+                Expanding Horizons
+              </Link>
+            </li>
+            <li>
+              <Link href="interstellar/galacticContribution">
+                Galactic Contributions
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
           <h2 className="text-xl font-extrabold">LISTINGS</h2>
           <ul className="font-poppins mt-6 space-y-3">
-            <li>BSC Scan</li>
+            <li>
+              <Link
+                href="https://bscscan.com/token/0x7029994f28fd39ff934a96b25591d250a2183f67"
+                target="_blank"
+              >
+                BSC Scan
+              </Link>
+            </li>
             <li>CoinMarketCap</li>
-            <li>CoinGecko</li>
+
+            <li>
+              <Link
+                href="https://www.coingecko.com/en/coins/froggies-token"
+                target="_blank"
+              >
+                CoinGecko
+              </Link>
+            </li>
             <li>Crypto.com</li>
             <li>DexTools</li>
           </ul>
@@ -50,8 +102,25 @@ function Sitemap() {
         <div>
           <h2 className="text-xl font-extrabold">SOCIALS</h2>
           <ul className="font-poppins mt-6 space-y-3">
-            <li>Official Instagram</li>
-            <li>Twitter</li>
+            <li>
+              <Link
+                target="_blank"
+                className="flex items-center space-x-2"
+                href={"https://t.me/officialfroggiestoken"}
+              >
+                <span>Instagram</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                target="_blank"
+                className="flex items-center space-x-2"
+                href={"https://twitter.com/froggiestoken/"}
+              >
+                <span>Twitter</span>
+              </Link>
+            </li>
+
             <li>Medium</li>
           </ul>
         </div>
