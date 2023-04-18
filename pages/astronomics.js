@@ -1,8 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/components/Navbar";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Astronomics() {
+  const [countDown, setCountDown] = useState(0);
+
+  const countDownTimer = () => {
+    const launchDate = new Date("October 24, 2022 00:00:00").getTime();
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    setCountDown(
+      `${Math.abs(days)} days : ${Math.abs(hours)} hrs : ${Math.abs(
+        minutes
+      )} mins`
+    );
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      countDownTimer();
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="fixed inset-0 h-full w-full bg-[#030835] overflow-hidden">
       <div className="relative h-full w-full overflow-hidden">
@@ -18,9 +44,7 @@ function Astronomics() {
                 100 QUADRILLION
               </p>
               <p className="text-white font-semibold">Launch date: 24/10/22</p>
-              <p className="text-[#cccccc] text-xl font-bold">
-                171 DAYS : 22 HRS : 27 MINS
-              </p>
+              <p className="text-[#cccccc] text-xl font-bold">{countDown}</p>
             </div>
             <div className="border relative h-44 w-full lg:w-[300px] rounded-md border-white mt-10 lg:mt-0">
               <img
