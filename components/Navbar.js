@@ -80,6 +80,26 @@ function Navbar({ theme = "dark" }) {
         <li
           className={`${
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
+          } rounded px-5 py-2 h-9 flex items-center justify-center transition-all cursor-pointer`}
+        >
+          <Link href={"https://www.everlost.io/"} target="_blank">
+            <div className="flex items-center space-x-2">
+              <img
+                src={
+                  theme == "dark"
+                    ? "/assets/richribbit.png"
+                    : "/assets/richribbit.png"
+                }
+                alt=""
+                className="h-8 grayscale"
+              />
+              <span className="font-semibold">Staking (soon)</span>
+            </div>
+          </Link>
+        </li>
+        <li
+          className={`${
+            theme == "dark" ? "bg-linkdark" : "bg-linklight"
           } rounded px-5 py-2 h-9 flex items-center justify-center cursor-pointer transition-all cursor-pointer`}
         >
           <Link href={"https://www.everlost.io/"} target="_blank">
@@ -176,24 +196,47 @@ function Navbar({ theme = "dark" }) {
             <span>Whitepaper</span>
           </Link>
         </li>
-        <li
-          className={`${
-            theme == "dark" ? "bg-linkdark" : "bg-linklight"
-          } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
-        >
-          <Link target="_blank" href={"https://t.me/officialfroggiestoken"}>
-            <Icon icon="file-icons:telegram" width={"18"} height={"18"} />
-          </Link>
-        </li>
-        <li
-          className={`${
-            theme == "dark" ? "bg-linkdark" : "bg-linklight"
-          } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
-        >
-          <Link target="_blank" href={"https://twitter.com/froggiestoken/"}>
-            <Icon icon="mdi:twitter" width={"18"} height={"18"} />
-          </Link>
-        </li>
+        <Popover className="relative">
+          <Popover.Button className="outline-none">
+            <li
+              className={`${
+                theme == "dark" ? "bg-linkdark" : "bg-linklight"
+              } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
+            >
+              <span>Socials</span>
+              <Icon
+                height={"24"}
+                width={"24"}
+                icon="material-symbols:arrow-drop-down-rounded"
+              />
+            </li>
+          </Popover.Button>
+
+          <Popover.Panel className="absolute p-4 w-36 left-1/2 -translate-x-1/2 flex flex-col items-center bg-slate-900 mt-3 text-sm text-white/80 rounded">
+            <ul className="space-y-3 text-white font-medium">
+              <li>
+                <Link
+                  target="_blank"
+                  className="flex items-center space-x-2"
+                  href={"https://t.me/officialfroggiestoken"}
+                >
+                  <Icon icon="file-icons:telegram" width={"18"} height={"18"} />
+                  <span>Telegram</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  className="flex items-center space-x-2"
+                  href={"https://twitter.com/froggiestoken/"}
+                >
+                  <Icon icon="mdi:twitter" width={"18"} height={"18"} />
+                  <span>Twitter</span>
+                </Link>
+              </li>
+            </ul>
+          </Popover.Panel>
+        </Popover>
         <Popover className="relative">
           <Popover.Button className="outline-none">
             <li

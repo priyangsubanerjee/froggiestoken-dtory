@@ -298,7 +298,11 @@ function TeamGrid() {
                   "bg-[#040a42] scale-110 transition-all border"
                 }`}
               >
-                <img src={item.image} alt="" className="h-full" />
+                <img
+                  src={item.image}
+                  alt=""
+                  className="h-full object-contain"
+                />
               </div>
             );
           })}

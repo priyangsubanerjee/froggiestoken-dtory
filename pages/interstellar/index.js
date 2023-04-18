@@ -33,7 +33,7 @@ function Interstellar() {
                 transform: "translateY(-100px)",
                 opacity: 0,
               }}
-              whileInView={{
+              animate={{
                 transform: "translateY(0px)",
                 opacity: 1,
                 transition: { duration: 1 },
