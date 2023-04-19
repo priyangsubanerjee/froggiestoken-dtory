@@ -121,7 +121,10 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
           </Menu>
         </div>
         <li className="flex items-center justify-center">
-          <Link href="https://drive.google.com/file/d/1oGf6O1Gq6YJOdazJBeHxGK_3wO3OZSTM/view">
+          <Link
+            target="_blank"
+            href="https://drive.google.com/file/d/1oGf6O1Gq6YJOdazJBeHxGK_3wO3OZSTM/view"
+          >
             <span>Whitepaper</span>
           </Link>
         </li>
