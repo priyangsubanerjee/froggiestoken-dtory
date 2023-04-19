@@ -234,6 +234,16 @@ function Navbar({ theme = "dark" }) {
                   <span>Twitter</span>
                 </Link>
               </li>
+              <li>
+                <Link
+                  target="_blank"
+                  className="flex items-center space-x-2"
+                  href={"https://discord.gg/Zr8VfbpNsq"}
+                >
+                  <Icon icon="ic:baseline-discord" width={"18"} height={"18"} />
+                  <span>Discord</span>
+                </Link>
+              </li>
             </ul>
           </Popover.Panel>
         </Popover>
