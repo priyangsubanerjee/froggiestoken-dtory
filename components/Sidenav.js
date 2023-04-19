@@ -167,11 +167,32 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
             </div>
           </Menu>
         </div>
-        <li className="flex items-center justify-center">
-          <span>Telegram</span>
+        <li>
+          <Link
+            target="_blank"
+            className="flex items-center justify-center"
+            href={"https://t.me/officialfroggiestoken"}
+          >
+            <span>Telegram</span>
+          </Link>
         </li>
-        <li className="flex items-center justify-center">
-          <span>Twitter</span>
+        <li>
+          <Link
+            target="_blank"
+            className="flex items-center justify-center"
+            href={"https://twitter.com/froggiestoken/"}
+          >
+            <span>Twitter</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            target="_blank"
+            className="flex items-center justify-center"
+            href={"https://discord.gg/Zr8VfbpNsq"}
+          >
+            <span>Discord</span>
+          </Link>
         </li>
       </ul>
     </div>
