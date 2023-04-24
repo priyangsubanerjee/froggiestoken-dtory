@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import { Menu } from "@headlessui/react";
+import { Icon } from "@iconify/react";
 
 function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
   const router = useRouter();
@@ -170,27 +171,30 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
         <li>
           <Link
             target="_blank"
-            className="flex items-center justify-center"
+            className="flex items-center justify-center space-x-2"
             href={"https://t.me/officialfroggiestoken"}
           >
+            <Icon icon="file-icons:telegram" width={"18"} height={"18"} />
             <span>Telegram</span>
           </Link>
         </li>
         <li>
           <Link
             target="_blank"
-            className="flex items-center justify-center"
+            className="flex items-center justify-center space-x-2"
             href={"https://twitter.com/froggiestoken/"}
           >
+            <Icon icon="mdi:twitter" width={"18"} height={"18"} />
             <span>Twitter</span>
           </Link>
         </li>
         <li>
           <Link
             target="_blank"
-            className="flex items-center justify-center"
+            className="flex items-center justify-center space-x-2"
             href={"https://discord.gg/Zr8VfbpNsq"}
           >
+            <Icon icon="ic:baseline-discord" width={"18"} height={"18"} />
             <span>Discord</span>
           </Link>
         </li>
