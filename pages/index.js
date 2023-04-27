@@ -33,7 +33,7 @@ export default function Home() {
       </CarouselParent>
       <img
         src="/assets/frog_landing_avatar.png"
-        className="fixed right-0 bottom-0 opacity-30 lg:opacity-100 lg:bottom-0 h-[300px] lg:h-[500px] z-0"
+        className="fixed right-0 bottom-0 opacity-30 lg:opacity-100 lg:bottom-0 h-[300px] lg:h-[700px] z-0"
         alt=""
       />
     </div>
