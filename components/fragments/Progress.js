@@ -10,12 +10,12 @@ function Progress() {
   };
   return (
     <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 pb-28 lg:pb-0 lg:pt-0 px-6 lg:px-24">
-      <p className="text-primaryGray_100 text-sm font-poppins font-medium lg:block hidden">
-        PROGRESS
-      </p>
-      <h1 className="text-3xl lg:text-6xl text-white font-extrabold leading-[1.6] lg:leading-[1.3] mt-5">
+      <h1 className="text-3xl lg:text-6xl text-white font-extrabold leading-[1.6] lg:leading-[1.3]">
         TEAM IS CONSTANTLY <br /> BUILDING, WHATS NEXT?
       </h1>
+      <p className="text-white/70 mt-5 text-sm">
+        Scroll down the list to discover more.
+      </p>
       <div className="mt-6 lg:mt-10 w-full lg:w-[500px] relative">
         <div className="w-full hidden lg:block absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#010417] to-transparent"></div>
         <div className="space-y-6 lg:h-[400px] pt-1 lg:py-10 overflow-auto progressScroll">

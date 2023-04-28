@@ -61,7 +61,7 @@ function Astronomics() {
               <div className="absolute z-10 inset-0 h-full w-full flex flex-col items-center justify-center">
                 <p className="text-white font-semibold">TOTAL SUPPLY</p>
                 <h1 className="text-5xl font-extrabold text-transparent font-outline mt-3">
-                  30%
+                  38%
                 </h1>
               </div>
             </div>
