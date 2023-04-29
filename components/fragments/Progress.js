@@ -38,7 +38,7 @@ function Progress() {
             type={"completed"}
             text={"Succesfull launch and adaptation of Ambassador program"}
             date={"16th Jan 2023"}
-          />{" "}
+          />
           <ProgressItem
             type={"completed"}
             text={"Create our 3D mascot: Froggie"}
@@ -84,12 +84,24 @@ function Progress() {
             type={"progress"}
             text={"Find more meaningful partnerships"}
           />
-          <ProgressItem text={"Testing of staking platform"} />
+          <ProgressItem
+            type={"progress"}
+            text={"Developemnt of FroggiesFortune (Entertainment)"}
+          />
+          <ProgressItem
+            type={"progress"}
+            text={"Testing of staking platform"}
+          />
+          <ProgressItem
+            type={"progress"}
+            text={"Listing on a CEX that fits our needs"}
+          />
           <ProgressItem text={"Continued development of P2E"} />
           <ProgressItem text={"Start planning on an NFT usecase collection"} />
           <ProgressItem text={"Release Staking Platform"} />
-          <ProgressItem text={"Listing on a CEX that fits our needs"} />
           <ProgressItem text={"More (list will be updated)"} />
+          <ProgressItem text={"Bridge to ERC (Ethereum)"} />
+          <ProgressItem text={"FroggiesFortune (Entertainment) launch"} />
         </div>
         <div className="w-full hidden lg:block absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#010417] to-transparent"></div>
       </div>
