@@ -7,7 +7,7 @@ function Buy() {
   return (
     <div className="h-full w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 pb-28 lg:pb-0 lg:pt-0 px-6 lg:px-24">
       <div className="mt-6 lg:mt-10 w-full lg:flex lg:items-center">
-        <div className="h-[700px] w-full lg:w-[450px] rounded-md overflow-hidden">
+        <div className="h-[700px] w-full lg:w-[450px] rounded-[30px] overflow-hidden">
           <iframe
             width={"100%"}
             height="700"
