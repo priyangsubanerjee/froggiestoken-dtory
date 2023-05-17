@@ -282,7 +282,7 @@ function Navbar({ theme = "dark" }) {
                   target="_blank"
                   href={"https://nanuqe.com/froggies-token/"}
                 >
-                  QYC
+                  KYC
                 </Link>
               </li>
               <li>
@@ -310,6 +310,16 @@ function Navbar({ theme = "dark" }) {
                   href={"https://coinmarketcap.com/currencies/froggies/"}
                 >
                   CMC
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href={
+                    "https://bscscan.com/address/0xdd59a14d12086d0137811d85d516ae9f8afd5700"
+                  }
+                >
+                  Multi-sig Wallet
                 </Link>
               </li>
             </ul>

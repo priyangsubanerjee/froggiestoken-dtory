@@ -153,16 +153,48 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                   <a href="">FAQ</a>
                 </Menu.Item>
                 <Menu.Item>
-                  <a href="">KYC</a>
+                  <Link
+                    target="_blank"
+                    href={"https://nanuqe.com/froggies-token/"}
+                  >
+                    KYC
+                  </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <a href="">BSC Scan</a>
+                  <Link
+                    target="_blank"
+                    href={
+                      "https://bscscan.com/token/0x7029994f28fd39ff934a96b25591d250a2183f67"
+                    }
+                  >
+                    BSCScan
+                  </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <a href="">Coingecko</a>
+                  <Link
+                    target="_blank"
+                    href={"https://www.coingecko.com/en/coins/froggies-token"}
+                  >
+                    CoinGecko
+                  </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <a href="">CMC</a>
+                  <Link
+                    target="_blank"
+                    href={"https://coinmarketcap.com/currencies/froggies/"}
+                  >
+                    CMC
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link
+                    target="_blank"
+                    href={
+                      "https://bscscan.com/address/0xdd59a14d12086d0137811d85d516ae9f8afd5700"
+                    }
+                  >
+                    Multi-sig Wallet
+                  </Link>
                 </Menu.Item>
               </Menu.Items>
             </div>
