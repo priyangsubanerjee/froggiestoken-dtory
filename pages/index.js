@@ -57,7 +57,7 @@ export default function Home() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 h-screen w-screen z-20 bg-black/70 flex items-center justify-center"
           >
-            <div className="bg-[#010417] w-[90%] lg:w-[600px] relative p-6 lg:p-8">
+            <div className="bg-[#010417] rounded-md w-[90%] lg:w-[600px] relative p-6 lg:p-8">
               <i className="text-red-400 absolute -top-10 left-1/2 -translate-x-1/2">
                 <iconify-icon
                   className="mr-5 block"
