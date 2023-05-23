@@ -100,7 +100,7 @@ function Navbar({ theme = "dark" }) {
         <li
           className={`${
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
-          } rounded px-5 py-2 h-9 flex items-center justify-center cursor-pointer transition-all cursor-pointer`}
+          } rounded px-5 py-2 h-9 flex items-center justify-center transition-all cursor-pointer`}
         >
           <Link href={"https://www.everlost.io/"} target="_blank">
             <img

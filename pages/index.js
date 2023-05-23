@@ -24,10 +24,10 @@ export default function Home() {
         <Snapbox id={3} state={state} setState={setState}>
           <Progress />
         </Snapbox>
-        <Snapbox id={4} state={state} setState={setState}>
+        {/* <Snapbox id={4} state={state} setState={setState}>
           <Buy />
-        </Snapbox>
-        <Snapbox id={5} state={state} setState={setState}>
+        </Snapbox> */}
+        <Snapbox id={4} state={state} setState={setState}>
           <BlackHole />
         </Snapbox>
       </CarouselParent>
