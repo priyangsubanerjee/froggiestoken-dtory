@@ -36,22 +36,27 @@ function BlackHole() {
             className="absolute inset-0 h-full w-full"
             alt=""
           />
-          <div className="absolute inset-0 h-full w-full flex items-center">
-            <div className="h-full flex items-end">
-              <img src="/assets/buy_token_grid.png" className="w-20" alt="" />
+          <a
+            href="https://pancakeswap.finance/swap?outputCurrency=0x440758dF68A045DB3F2517257F27330a12438656"
+            target="_blank"
+          >
+            <div className="absolute inset-0 h-full w-full flex items-center">
+              <div className="h-full flex items-end">
+                <img src="/assets/buy_token_grid.png" className="w-20" alt="" />
+              </div>
+              <div
+                className="ml-4 cursor-pointer"
+                onClick={() => {
+                  scrollOnClick("4");
+                }}
+              >
+                <p className="font-bold text-white">BUY</p>
+                <span className="text-[#cccccc] text-sm">
+                  Buy froggies token now
+                </span>
+              </div>
             </div>
-            <div
-              className="ml-4 cursor-pointer"
-              onClick={() => {
-                scrollOnClick("4");
-              }}
-            >
-              <p className="font-bold text-white">BUY</p>
-              <span className="text-[#cccccc] text-sm">
-                Buy froggies token now
-              </span>
-            </div>
-          </div>
+          </a>
         </div>
         <div className="h-20 relative lg:-ml-1 -mt-1 lg:mt-0">
           <img

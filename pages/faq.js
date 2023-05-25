@@ -39,7 +39,7 @@ function FAQ() {
             question={"What is our contract address?"}
             answer={
               <p>
-                0x7029994f28fd39ff934A96b25591D250A2183f67 <br />
+                0x440758dF68A045DB3F2517257F27330a12438656 <br />
                 Chain: Binance Smart Chain
               </p>
             }
@@ -58,13 +58,20 @@ function FAQ() {
                 </p>
                 <ul className="list-disc ml-5 mt-2 space-y-2">
                   <li>
-                    Tax cannot be set higher than 15% state._maxTaxFee =
+                    Tax cannot be set higher than 10% state._maxTaxFee =
                     1500;(1500 means 15%)
                   </li>
                   <li>Our Liquidity Pool is fully locked</li>
                   <li>
-                    Our team members have been KYC by Nanuqe:
-                    https://t.co/ksVl2DC0XR
+                    Our contract and our core team has been audited KYC by
+                    Certik:
+                    <a
+                      target="_blank"
+                      className="ml-1 underline"
+                      href="https://skynet.certik.com/projects/froggies-token"
+                    >
+                      https://skynet.certik.com/projects/froggies-token
+                    </a>
                   </li>
                   <li>Some team members are doxxed</li>
                 </ul>
@@ -72,22 +79,7 @@ function FAQ() {
             }
           />
           <Panel
-            index={4}
-            state={state}
-            setState={setState}
-            question={"Is Froggies Token listed on a centralized exchange?"}
-            answer={
-              <div>
-                <p>
-                  Yes, we are listed on the rapidly expanding Asian exchange
-                  Coinstore. Froggies Token is paired with USDT and can be spot
-                  traded; https://www.coinstore.com/#/spot/FRGSTUSDT
-                </p>
-              </div>
-            }
-          />
-          <Panel
-            n={5}
+            index={5}
             state={state}
             setState={setState}
             question={
@@ -97,8 +89,8 @@ function FAQ() {
               <div>
                 <p>
                   Go to:
-                  <a href=" https://pancakeswap.finance/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f67&inputCurrency=BNB">
-                    https://pancakeswap.finance/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f67&inputCurrency=BNB
+                  <a href="https://pancakeswap.finance/swap?outputCurrency=0x440758dF68A045DB3F2517257F27330a12438656">
+                    https://pancakeswap.finance/swap?outputCurrency=0x440758dF68A045DB3F2517257F27330a12438656
                   </a>
                   <ul className="list-disc ml-5 mt-2 space-y-2">
                     <li>Connect your preferred wallet</li>
@@ -197,38 +189,6 @@ function FAQ() {
                   Metamask and select &apos;import token&apos;. Select
                   &apos;Custom Token&apos; and fill out the contract address
                   followed by import.
-                </p>
-              </div>
-            }
-          />
-          <Panel
-            index={11}
-            state={state}
-            setState={setState}
-            question={"How can I get free $FRGST?"}
-            answer={
-              <div>
-                <p>
-                  P2E <br /> Play our P2E https://everlost.io as much as you
-                  want and earn $FRGST while burning other memetokens. <br />
-                  <br />
-                  AMBASSADOR <br /> Read more on how the program works by simply
-                  joining the Telegram group, read the rules/tasks and start
-                  taking your piece of the monthly prize pool!
-                  <br />
-                  <br />
-                  <a href="https://t.me/FroggiesAmbassadors">
-                    https://t.me/FroggiesAmbassadors
-                  </a>
-                  <br />
-                  <br />
-                  PARTICIPATE <br /> $FRGST Rewards are up for grabs every day
-                  to those who participate in the community. Create posts,
-                  memes, enter contests, help a fellow Froggie in need, or even
-                  tip other people with your own tokens and it might rain $FRGST
-                  on you!
-                  <br /> <br /> GIVEAWAYS & EVENTS <br /> Enter $FRGST giveaways
-                  on our twitter and you might have a chance to win 👀
                 </p>
               </div>
             }

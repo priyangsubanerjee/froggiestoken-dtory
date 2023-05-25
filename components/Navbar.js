@@ -155,28 +155,10 @@ function Navbar({ theme = "dark" }) {
                 <Link
                   target="_blank"
                   href={
-                    "https://pancakeswap.finance/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f67&inputCurrency=BNB"
+                    "https://pancakeswap.finance/swap?outputCurrency=0x440758dF68A045DB3F2517257F27330a12438656"
                   }
                 >
                   Pancakeswap
-                </Link>
-              </li>
-              <li>
-                <Link
-                  target="_blank"
-                  href={
-                    "https://poocoin.app/swap?outputCurrency=0x7029994f28fd39ff934A96b25591D250A2183f7"
-                  }
-                >
-                  Poocoin
-                </Link>
-              </li>
-              <li>
-                <Link
-                  target="_blank"
-                  href={"https://www.coinstore.com/#/spot/FRGSTUSDT"}
-                >
-                  Coinstore
                 </Link>
               </li>
             </ul>

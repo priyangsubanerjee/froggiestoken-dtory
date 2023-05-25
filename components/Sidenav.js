@@ -109,13 +109,12 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                 }
               >
                 <Menu.Item>
-                  <a href="">PancakeSwap</a>
-                </Menu.Item>
-                <Menu.Item>
-                  <a href="">Poocoin</a>
-                </Menu.Item>
-                <Menu.Item>
-                  <a href="">Coinstore</a>
+                  <a
+                    target="_blank"
+                    href="https://pancakeswap.finance/swap?outputCurrency=0x440758dF68A045DB3F2517257F27330a12438656"
+                  >
+                    PancakeSwap
+                  </a>
                 </Menu.Item>
               </Menu.Items>
             </div>
@@ -164,7 +163,7 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                   <Link
                     target="_blank"
                     href={
-                      "https://bscscan.com/token/0x7029994f28fd39ff934a96b25591d250a2183f67"
+                      "https://bscscan.com/token/0x440758dF68A045DB3F2517257F27330a12438656"
                     }
                   >
                     BSCScan

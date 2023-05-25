@@ -48,7 +48,7 @@ function Manifesto() {
           </p>
           <div className="flex items-center justify-end mt-10 text-sm">
             <p className="text-[#777777]">
-              Paretenerd with{" "}
+              Partenerd with{" "}
               <a href="" className="underline">
                 Dtory Studio
               </a>
