@@ -154,7 +154,7 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                 <Menu.Item>
                   <Link
                     target="_blank"
-                    href={"https://nanuqe.com/froggies-token/"}
+                    href={"https://skynet.certik.com/projects/froggies-token"}
                   >
                     KYC
                   </Link>
@@ -163,7 +163,7 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                   <Link
                     target="_blank"
                     href={
-                      "https://bscscan.com/token/0x440758dF68A045DB3F2517257F27330a12438656"
+                      "https://bscscan.com/token/0x440758df68a045db3f2517257f27330a12438656"
                     }
                   >
                     BSCScan
@@ -180,7 +180,7 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                 <Menu.Item>
                   <Link
                     target="_blank"
-                    href={"https://coinmarketcap.com/currencies/froggies/"}
+                    href={"https://coinmarketcap.com/currencies/froggies-v2/"}
                   >
                     CMC
                   </Link>

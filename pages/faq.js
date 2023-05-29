@@ -57,10 +57,7 @@ function FAQ() {
                   measures:
                 </p>
                 <ul className="list-disc ml-5 mt-2 space-y-2">
-                  <li>
-                    Tax cannot be set higher than 10% state._maxTaxFee =
-                    1500;(1500 means 15%)
-                  </li>
+                  <li>Tax cannot be set higher than 10%</li>
                   <li>Our Liquidity Pool is fully locked</li>
                   <li>
                     Our contract and our core team has been audited KYC by

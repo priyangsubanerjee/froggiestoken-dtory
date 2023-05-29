@@ -262,7 +262,7 @@ function Navbar({ theme = "dark" }) {
               <li>
                 <Link
                   target="_blank"
-                  href={"https://nanuqe.com/froggies-token/"}
+                  href={"https://skynet.certik.com/projects/froggies-token"}
                 >
                   KYC
                 </Link>
@@ -271,7 +271,7 @@ function Navbar({ theme = "dark" }) {
                 <Link
                   target="_blank"
                   href={
-                    "https://bscscan.com/token/0x7029994f28fd39ff934a96b25591d250a2183f67"
+                    "https://bscscan.com/token/0x440758df68a045db3f2517257f27330a12438656"
                   }
                 >
                   BSCScan
@@ -289,7 +289,7 @@ function Navbar({ theme = "dark" }) {
               <li>
                 <Link
                   target="_blank"
-                  href={"https://coinmarketcap.com/currencies/froggies/"}
+                  href={"https://coinmarketcap.com/currencies/froggies-v2/"}
                 >
                   CMC
                 </Link>
