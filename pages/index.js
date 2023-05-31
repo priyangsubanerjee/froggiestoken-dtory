@@ -3,6 +3,7 @@ import CarouselParent from "@/components/CarouselParent";
 import Navbar from "@/components/Navbar";
 import Snapbox from "@/components/Snapbox";
 import About from "@/components/fragments/About";
+import Astronomics from "@/components/fragments/Astronomics";
 import BlackHole from "@/components/fragments/BlackHole";
 import Buy from "@/components/fragments/Buy";
 import Progress from "@/components/fragments/Progress";
@@ -42,6 +43,9 @@ export default function Home() {
         </Snapbox> */}
         <Snapbox id={4} state={state} setState={setState}>
           <BlackHole />
+        </Snapbox>
+        <Snapbox id={5} state={state} setState={setState}>
+          <Astronomics />
         </Snapbox>
       </CarouselParent>
       <img
