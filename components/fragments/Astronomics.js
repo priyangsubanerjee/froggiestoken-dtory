@@ -35,9 +35,11 @@ function Astronomics() {
       </h1>
       <div className="border-y border-white mt-10 px-6 py-10 lg:py-7 lg:flex items-center justify-center lg:justify-between lg:w-[700px]">
         <div className="space-y-4 text-center lg:text-left">
-          <p className="text-white font-semibold">TOTAL SUPPLY</p>
-          <p className="text-[#cccccc] text-xl font-bold">100 QUADRILLION</p>
-          <p className="text-white font-semibold">Launch date: 24/10/22</p>
+          <p className="text-white font-semibold uppercase">Initial supply</p>
+          <p className="text-[#cccccc] text-xl font-bold uppercase">
+            100 trillion
+          </p>
+          <p className="text-white font-semibold">Launch date - 25/05/23</p>
           <p className="text-[#cccccc] text-xl font-bold">{countDown}</p>
         </div>
         <div className="border relative h-44 w-full lg:w-[300px] rounded-md border-white mt-10 lg:mt-0">
