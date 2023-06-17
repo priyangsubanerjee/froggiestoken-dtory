@@ -5,7 +5,14 @@ function Controlbars({ totalBars, state }) {
     const firstSection = document.getElementById(`${id}`);
     firstSection.scrollIntoView({ behavior: "smooth" });
   };
-  const menu = ["About us", "Team", "Progress", "Black Hole", "Astronomics"];
+  const menu = [
+    "About us",
+    "Team",
+    "Progress",
+    "Buy",
+    "Black Hole",
+    "Astronomics",
+  ];
   return (
     <div>
       <div className="fixed bottom-0 z-20 left-0 inset-y-0 w-16 hidden lg:flex lg:flex-col justify-center items-center space-y-7">

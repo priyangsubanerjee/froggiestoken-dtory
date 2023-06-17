@@ -38,13 +38,13 @@ export default function Home() {
         <Snapbox id={3} state={state} setState={setState}>
           <Progress />
         </Snapbox>
-        {/* <Snapbox id={4} state={state} setState={setState}>
-          <Buy />
-        </Snapbox> */}
         <Snapbox id={4} state={state} setState={setState}>
-          <BlackHole />
+          <Buy />
         </Snapbox>
         <Snapbox id={5} state={state} setState={setState}>
+          <BlackHole />
+        </Snapbox>
+        <Snapbox id={6} state={state} setState={setState}>
           <Astronomics />
         </Snapbox>
       </CarouselParent>
