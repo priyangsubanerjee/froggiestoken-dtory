@@ -68,7 +68,7 @@ function Astronomics() {
             Buy TAX - 5%
           </h2>
           <p className="bg-[#5C5C5C]/20 w-fit px-6 py-2 rounded-md font-medium mt-5">
-            Marketing: 4%
+            Marketing: 5%
           </p>
         </div>
         <div className="grid grid-cols-1">
@@ -76,7 +76,7 @@ function Astronomics() {
             Sell Tax - 10%
           </h2>
           <p className="bg-[#5C5C5C]/20  px-6 py-2 rounded-md font-medium mt-5">
-            Marketing: 2%
+            Marketing: 4%
           </p>
           <p className="bg-[#5C5C5C]/20  px-6 py-2 rounded-md font-medium mt-5">
             Liquidity: 4%

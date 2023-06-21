@@ -10,8 +10,8 @@ function Controlbars({ totalBars, state }) {
     "Team",
     "Progress",
     "Buy",
-    "Black Hole",
     "Astronomics",
+    "Black Hole",
   ];
   return (
     <div>

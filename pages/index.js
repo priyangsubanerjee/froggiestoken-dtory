@@ -42,10 +42,10 @@ export default function Home() {
           <Buy />
         </Snapbox>
         <Snapbox id={5} state={state} setState={setState}>
-          <BlackHole />
+          <Astronomics />
         </Snapbox>
         <Snapbox id={6} state={state} setState={setState}>
-          <Astronomics />
+          <BlackHole />
         </Snapbox>
       </CarouselParent>
       <img
