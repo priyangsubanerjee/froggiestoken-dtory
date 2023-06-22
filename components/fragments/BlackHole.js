@@ -110,7 +110,7 @@ function BlackHole() {
             <div className="h-full flex items-end">
               <img src="/assets/astronomics_grid.png" className="w-20" alt="" />
             </div>
-            <Link href={"/astronomics"}>
+            <Link href={"#astronomics"}>
               <div className="ml-4">
                 <p className="font-bold text-white">ASTRONOMICS</p>
                 <span className="text-[#cccccc] text-sm">

@@ -29,7 +29,10 @@ function Astronomics() {
   }, []);
 
   return (
-    <div className="h-fit lg:min-h-screen w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-[200px] lg:pb-0 px-6 lg:px-24">
+    <div
+      id="astronomics"
+      className="h-fit lg:min-h-screen w-full overflow-y-scroll lg:overflow-hidden scrollbar-hide scrollContent lg:flex lg:flex-col lg:justify-center relative pt-20 lg:pt-0 pb-[200px] lg:pb-0 px-6 lg:px-24"
+    >
       <h1 className="text-white text-3xl lg:text-6xl font-extrabold mt-6 lg:mt-16">
         ASTRONOMICS
       </h1>
