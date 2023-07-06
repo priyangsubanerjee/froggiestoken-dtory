@@ -53,7 +53,12 @@ export default function Home() {
         className="fixed right-0 bottom-0 opacity-30 lg:opacity-100 lg:bottom-0 h-[300px] lg:h-[600px] z-0"
         alt=""
       />
-      <AnimatePresence>
+
+      {
+        //   Wallet modal
+      }
+
+      {/* <AnimatePresence>
         {walletModal && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -135,7 +140,7 @@ export default function Home() {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 }
