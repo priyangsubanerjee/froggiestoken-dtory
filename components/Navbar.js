@@ -82,7 +82,7 @@ function Navbar({ theme = "dark" }) {
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
           } rounded px-5 py-2 h-9 flex items-center justify-center transition-all cursor-pointer`}
         >
-          <Link href={"https://www.richribbit.com/"} target="_blank">
+          <Link href={"https://richribbit.io/"} target="_blank">
             <div className="flex items-center space-x-2">
               <img
                 src={
@@ -93,7 +93,7 @@ function Navbar({ theme = "dark" }) {
                 alt=""
                 className="h-8 grayscale"
               />
-              <span className="font-semibold">Staking (soon)</span>
+              <span className="font-semibold">Staking</span>
             </div>
           </Link>
         </li>
