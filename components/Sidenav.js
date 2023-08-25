@@ -55,7 +55,7 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
       </div>
       <ul className="w-full mt-16 text-sm font-poppins space-y-9  text-white font-medium mb-44">
         <li className="flex items-center justify-center">
-          <Link href={"https://richribbit.com/"} target="_blank">
+          <Link href={"https://richribbit.io/"} target="_blank">
             <div className="flex items-center space-x-2">
               <img
                 src={
@@ -66,7 +66,7 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                 alt=""
                 className="h-8 grayscale"
               />
-              <span className="font-semibold">Staking (soon)</span>
+              <span className="font-semibold">Staking</span>
             </div>
           </Link>
         </li>
