@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import CarouselParent from "@/components/CarouselParent";
 import Navbar from "@/components/Navbar";
+import RichRibbitLive from "@/components/RichRibbitLive";
 import Snapbox from "@/components/Snapbox";
 import About from "@/components/fragments/About";
 import Astronomics from "@/components/fragments/Astronomics";
@@ -141,6 +142,8 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence> */}
+
+      <RichRibbitLive />
     </div>
   );
 }
