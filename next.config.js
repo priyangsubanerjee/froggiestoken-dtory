@@ -8,7 +8,7 @@ const nextConfig = {
         headers: [
           {
             key: "x-frame-options",
-            value: "DENY",
+            value: "SAMEORIGIN",
           },
 
           // x-content-type-options
