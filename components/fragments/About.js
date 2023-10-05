@@ -9,7 +9,7 @@ function About() {
   };
 
   return (
-    <div className="pt-20 lg:pt-0 px-6 lg:px-24 pb-28 lg:pb-0 z-0 h-fit bg-emerald-50/0">
+    <div className="pt-20 lg:pt-0 px-6 lg:px-24 pb-28 lg:pb-0 z-0 h-fit">
       <h1 className="text-4xl lg:text-7xl text-white font-extrabold leading-[1.2] lg:leading-[1.2] mt-10 lg:mt-0">
         FROM FROGGIES <br /> TO SPACE
       </h1>

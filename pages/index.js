@@ -26,8 +26,11 @@ export default function Home() {
       setWalletModal(true);
     }
   }, []);
+
+  // bg-[#010417]
+
   return (
-    <div className="bg-[#010417] w-screen fixed inset-0 h-screen z-0">
+    <div className="bg-[url('/background.png')] w-screen fixed inset-0 h-screen z-0">
       <Navbar />
       <CarouselParent state={state} setState={setState}>
         <Snapbox id={1} state={state} setState={setState}>
@@ -50,7 +53,7 @@ export default function Home() {
         </Snapbox>
       </CarouselParent>
       <img
-        src="/assets/frog_landing_avatar.png"
+        src="/mascot.png"
         className="fixed right-0 bottom-0 opacity-30 lg:opacity-100 lg:bottom-0 h-[300px] lg:h-[600px] z-0"
         alt=""
       />

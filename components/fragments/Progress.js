@@ -17,7 +17,7 @@ function Progress() {
         Scroll down the list to discover more.
       </p>
       <div className="mt-6 lg:mt-10 w-full lg:w-[500px] relative">
-        <div className="w-full hidden lg:block absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#010417] to-transparent"></div>
+        {/* <div className="w-full hidden lg:block absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#010417] to-transparent"></div> */}
         <div className="space-y-6 lg:h-[400px] pt-1 lg:py-10 overflow-auto progressScroll">
           <ProgressItem
             type={"completed"}
@@ -103,7 +103,7 @@ function Progress() {
           <ProgressItem text={"Bridge to ERC (Ethereum)"} />
           <ProgressItem text={"FroggiesFortune (Entertainment) launch"} />
         </div>
-        <div className="w-full hidden lg:block absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#010417] to-transparent"></div>
+        {/* <div className="w-full hidden lg:block absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#010417] to-transparent"></div> */}
       </div>
       <div className="hidden lg:flex items-center text-white mt-10">
         <span>Bright Future for $FRGST .</span>
