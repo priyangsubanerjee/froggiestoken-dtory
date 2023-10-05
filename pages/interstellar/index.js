@@ -17,7 +17,7 @@ function Interstellar() {
     }
   };
   return (
-    <div className="fixed inset-0 h-screen w-screen bg-[url('/background.png')]">
+    <div className="fixed inset-0 h-screen w-screen bg-[url('/background.png')]  bg-cover">
       <div className="h-full w-full relative">
         <div className="absolute z-10 h-full w-full flex justify-center items-center">
           <ul className="text-white/50 space-y-12 lg:space-y-16 text-2xl lg:text-5xl font-poppins font-extrabold text-center ">
