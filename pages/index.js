@@ -30,7 +30,7 @@ export default function Home() {
   // bg-[#010417]
 
   return (
-    <div className="bg-[url('/background.png')] bg-cover w-screen fixed inset-0 h-screen z-0">
+    <div className="bg-[url('/background.png')] bg-cover bg-no-repeat w-screen fixed inset-0 h-screen z-0">
       <Navbar />
       <CarouselParent state={state} setState={setState}>
         <Snapbox id={1} state={state} setState={setState}>
