@@ -9,7 +9,7 @@ function GalacticContributions() {
     router.push("/interstellar");
   };
   return (
-    <div className="fixed inset-0 h-full w-full bg-[url('/background.png')]  bg-cover bg-no-repeat overflow-hidden">
+    <div className="fixed inset-0 h-full w-full bg-[url('/bgphone.png')] lg:bg-[url('/background.png')]  bg-cover bg-no-repeat overflow-hidden">
       <div className="fixed flex items-center px-6 lg:px-20 z-20 h-16 lg:h-20 backdrop-blur w-full top-0 inset-x-0">
         <button
           onClick={() => {
