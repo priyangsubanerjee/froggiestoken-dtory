@@ -54,7 +54,7 @@ export default function Home() {
       </CarouselParent>
       <img
         src="/mascot.png"
-        className="fixed right-0 bottom-0 opacity-30 lg:opacity-100 lg:bottom-0 h-[300px] lg:h-[600px] z-0"
+        className="fixed right-0 bottom-0 opacity-100 lg:opacity-100 lg:bottom-0 h-[300px] lg:h-[600px] z-0"
         alt=""
       />
 
