@@ -1,11 +1,16 @@
-import PdfViewer from "@/components/PdfViewer";
+import { useEffect } from 'react';
 
-const Page = () => {
+const InvestorDeck = () => {
+  useEffect(() => {
+    window.location.href = 'https://acrobat.adobe.com/id/urn:aaid:sc:EU:7dd6d5b2-2e69-4f14-a039-f80c08b6d0f0';
+  }, []);
 
-  return (
-    <>
-      <PdfViewer  url={"/assets/FroggiesInvestorDeck.pdf"} />
-    </>
-  );
+  return <p>Redirecting...</p>;
 };
-export default Page;
+
+export default InvestorDeck;
+
+export const getServerSideProps = async ({ res }) => {
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow');
+  return { props: {} };
+};

@@ -10,9 +10,6 @@ const nextConfig = {
             key: "x-frame-options",
             value: "DENY",
           },
-
-          // x-content-type-options
-
           {
             key: "x-content-type-options",
             value: "nosniff",
