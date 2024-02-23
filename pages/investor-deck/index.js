@@ -9,8 +9,3 @@ const InvestorDeck = () => {
 };
 
 export default InvestorDeck;
-
-export const getServerSideProps = async ({ res }) => {
-  res.setHeader('X-Robots-Tag', 'noindex, nofollow');
-  return { props: {} };
-};
