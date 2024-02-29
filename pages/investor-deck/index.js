@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const InvestorDeck = () => {
   useEffect(() => {
-    window.location.href = 'https://acrobat.adobe.com/id/urn:aaid:sc:EU:7dd6d5b2-2e69-4f14-a039-f80c08b6d0f0';
+    window.location.href = 'https://acrobat.adobe.com/id/urn:aaid:sc:EU:255f7ea0-1331-4fe0-8454-fdc27319f6b1';
   }, []);
 
   return <p>Redirecting...</p>;
