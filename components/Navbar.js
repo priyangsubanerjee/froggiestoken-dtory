@@ -169,12 +169,7 @@ function Navbar({ theme = "dark" }) {
             theme == "dark" ? "bg-linkdark" : "bg-linklight"
           } rounded px-5 py-2 h-10 flex items-center justify-center cursor-pointer`}
         >
-          <Link
-            target="_blank"
-            href={
-              "https://drive.google.com/file/d/1oGf6O1Gq6YJOdazJBeHxGK_3wO3OZSTM/view"
-            }
-          >
+          <Link target="_blank" href={"/documents/white-paper.pdf"}>
             <span>Whitepaper</span>
           </Link>
         </li>
