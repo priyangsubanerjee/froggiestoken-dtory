@@ -149,7 +149,7 @@ function Navbar({ theme = "dark" }) {
             </li>
           </Popover.Button>
 
-          <Popover.Panel className="absolute p-4 w-36 left-1/2 -translate-x-1/2 flex flex-col items-center bg-slate-900 mt-3 text-sm text-white/80 rounded">
+          <Popover.Panel className="absolute p-4 w-44 left-1/2 -translate-x-1/2 flex flex-col items-center bg-slate-900 mt-3 text-sm text-white/80 rounded">
             <ul className="space-y-3 text-white font-medium">
               <li>
                 <Link
@@ -158,7 +158,17 @@ function Navbar({ theme = "dark" }) {
                     "https://pancakeswap.finance/swap?outputCurrency=0x440758dF68A045DB3F2517257F27330a12438656"
                   }
                 >
-                  Pancakeswap
+                  Pancakeswap - BSC
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href={
+                    "https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xCF6a03E353f0AdB2c05992264835b4f03a371117"
+                  }
+                >
+                  Uniswap - ETH
                 </Link>
               </li>
             </ul>

@@ -9,7 +9,7 @@ function RichRibbitLive() {
   useEffect(() => {
     let shown = sessionStorage.getItem("richribbitStaking") || false;
     if (!shown) {
-      setIsOpen(true);
+      setIsOpen(false);
     } else {
       setIsOpen(false);
     }

@@ -113,7 +113,15 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
                     target="_blank"
                     href="https://pancakeswap.finance/swap?outputCurrency=0x440758dF68A045DB3F2517257F27330a12438656"
                   >
-                    PancakeSwap
+                    Pancakeswap - BSC
+                  </a>
+                </Menu.Item>
+                <Menu.Item>
+                  <a
+                    target="_blank"
+                    href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xCF6a03E353f0AdB2c05992264835b4f03a371117"
+                  >
+                    Uniswap - ETH
                   </a>
                 </Menu.Item>
               </Menu.Items>
