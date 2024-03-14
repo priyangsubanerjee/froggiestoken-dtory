@@ -16,7 +16,7 @@ function RichRibbitLive() {
   }, []);
   return (
     <>
-      {isOpen && (
+      {false && (
         <div className="fixed inset-0 w-full h-full z-40 bg-black/80 flex items-center justify-center">
           <div className="w-[90%] lg:w-[550px] h-[480px] py-10 relative">
             <img
