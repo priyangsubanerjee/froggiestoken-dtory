@@ -53,7 +53,7 @@ function Buy() {
                   </div>
                 </Link>
               </div>
-              <div>
+              {/* <div>
                 <Link
                   target="_blank"
                   href={"https://www.coinstore.com/#/spot/FRGSTUSDT"}
@@ -83,7 +83,7 @@ function Buy() {
                     </div>
                   </div>
                 </Link>
-              </div>
+              </div> */}
               <div>
                 <Link
                   target="_blank"
