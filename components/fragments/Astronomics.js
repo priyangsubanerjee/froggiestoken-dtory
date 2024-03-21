@@ -5,7 +5,7 @@ function Astronomics() {
   const [countDown, setCountDown] = useState(0);
 
   const countDownTimer = () => {
-    const launchDate = new Date("May 25, 2023 00:00:00").getTime();
+    const launchDate = new Date("Nov 24, 2021 00:00:00").getTime();
     const now = new Date().getTime();
     const distance = launchDate - now;
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
