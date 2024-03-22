@@ -234,6 +234,18 @@ function Sidenav({ sideNavOpen, setSideNavOpen, theme = "dark" }) {
             <span>Discord</span>
           </Link>
         </li>
+        <li>
+          <Link
+            target="_blank"
+            className="flex items-center justify-center space-x-2"
+            href={
+              "https://www.dextools.io/app/en/ether/pair-explorer/0x06037b05cd6fcb0bb8874e13f3e14039fea44000?t=1711037782362"
+            }
+          >
+            <Icon icon="ic:baseline-discord" width={"18"} height={"18"} />
+            <span>DEXTOOLS</span>
+          </Link>
+        </li>
       </ul>
     </div>
   );
